@@ -1,0 +1,12 @@
+/*... head area ... */
+<script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+  }
+</script>
+
+
+
+/* And change your iframe to this:    note the onload function call */
+
+<iframe src="..." frameborder="0" scrolling="no" onload="resizeIframe(this)" />
